@@ -6,4 +6,7 @@ func _on_opciones_pressed() -> void:
 
 
 func _on_salir_pressed() -> void:
+	get_node("TextureRect/CenterContainer2/VBoxContainer/SalirDialog").popup_centered()
+
+func _on_salir_dialog_confirmed() -> void:
 	get_tree().quit()
