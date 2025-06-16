@@ -86,6 +86,9 @@ text = "Salir
 "
 
 [node name="SalirDialog" type="ConfirmationDialog" parent="TextureRect/CenterContainer2/VBoxContainer"]
+title = " Desea salir?"
+ok_button_text = "Si"
+cancel_button_text = "No"
 
 [connection signal="pressed" from="TextureRect/CenterContainer2/VBoxContainer/opciones" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="TextureRect/CenterContainer2/VBoxContainer/salir" to="." method="_on_salir_pressed"]
